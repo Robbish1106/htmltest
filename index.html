@@ -1,0 +1,44 @@
+<body background="">
+    <style>
+        @import url(App.css);
+    </style>
+    <img src="./National_Taiwan_Normal_University_logo.png"  width="200" height="200" style="display:block; margin:auto;">
+    <div class="title"><h1 style="color:#8F4586;">校友職涯追蹤系統帳號申請</h1></div>
+    <hr style="background-color: #8F4586;border:none;" size="8" width="80%" ><br>
+<div class="App">
+    <div class="information">
+      <label>學生學號</label>&emsp;
+      <input class="noline" type="text"
+  
+      /><br><br>
+      <label>設定密碼</label>&emsp;
+      <input class="noline" type="text"
+  
+      /><br><br>
+      <label>學生姓名</label>&emsp;
+      <input class="noline" type="text"
+ 
+      /><br><br>
+      <label>畢業年份</label>&emsp;
+      <input class="noline"
+        type="number" min="1900" max="2099" step="1"
+ 
+      /><br><br>
+    </div>
+</div>
+<div class="App">
+<label for="gender-select">學生性別</label>&emsp;&thinsp;
+<select name="genders" id="gender-select" class="noline" >
+  <option value=""></option>
+  <option value="Male">男</option>
+  <option value="Female">女</option>
+  <option value="other">其他</option>
+</select>
+</div>
+<div class="information2">
+    <button onClick={addstudent}>Create</button>
+    &emsp;&emsp;&emsp;&emsp;&emsp;
+    <button onClick={updatestudent}>Update</button>
+</div>
+
+</body>
